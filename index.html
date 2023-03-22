@@ -12,7 +12,7 @@
       .videos-wrapper {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
       }
 
       .video {
@@ -24,29 +24,19 @@
   <body>
     <div class="videos-wrapper">
       <div class="video-box">
-        <h2>mov/quicktime/rle/alpha - autoplay</h2>
-        <video autoplay playsinline loop muted preload="auto" class="video">
-          <source src="./camera-rle.mov" type="video/mp4" />
+        <h2>mov/quicktime/rle/alpha</h2>
+        <video autoplay playsinline loop muted class="video">
+          <source src="./camera-rle.mov" />
         </video>
-      </div>
+      </div
+      
       <div class="video-box">
-        <h2>mov/quicktime/rle/alpha - controls</h2>
-        <video controls muted class="video">
-          <source src="./camera-rle.mov" type="video/mp4" />
+        <h2>mp4/HEVC/hvc1/alpha</h2>
+        <video autoplay playsinline loop muted class="video">
+          <source src="./output.mp4" type="video/mp4;codecs=hvc1"/>
         </video>
-      </div>
-      <div class="video-box">
-        <h2>mov/quicktime/hev(265?)/alpha - autoplay</h2>
-        <video autoplay playsinline loop muted preload="auto" class="video">
-          <source src="./camera-hev.mov" type="video/mp4" />
-        </video>
-      </div>
-      <div class="video-box">
-        <h2>mov/quicktime/avc</h2>
-        <video autoplay playsinline loop muted preload="auto" class="video">
-          <source src="./camera-avc.mov" type="video/mp4" />
-        </video>
-      </div>
+      </div
+
     </div>
   </body>
 </html>
